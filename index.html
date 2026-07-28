@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Milo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>不打烊</title>
+  <style>
+    body { margin: 0; padding: 0; }
+  </style>
 </head>
 <body>
   <script type="text/javascript">
@@ -12,8 +15,12 @@
           window.voiceflow.chat.load({
             verify: { projectID: '6a67f6fe62c0f0c08c49b6fb' },
             url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
             voice: {
               url: "https://runtime-api.voiceflow.com"
+            },
+            assistant: {
+              renderMode: 'embed'
             }
           });
         }
